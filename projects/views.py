@@ -4,7 +4,10 @@ from django.http import HttpResponse
 
 # Create your views here.
 def projects(request):
-    return render(request, 'projects/projects.html')
+    msg = 'Hello, you\'re on the projects page.'
+    return render(request, 'projects/projects.html', {
+        'msg': msg,
+    })
 
 
 def project(request, pk):
