@@ -127,6 +127,9 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
+# pushing static files on a live server
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 MEDIA_ROOT = BASE_DIR / 'static/images'
 
 MEDIA_URL = '/images/'
